@@ -128,8 +128,8 @@ Vagrant.configure(2) do |config|
     curl -X PUT 'http://127.0.0.1:5984/_config/httpd_global_handlers/favicon.ico' -d '"{couch_httpd_misc_handlers, handle_favicon_req, \\"/usr/local/var/lib/couchdb\\"}"'
 
     # last configurations
-    curl -X PUT 'http://127.0.0.1:'$2'/_config/httpd/allow_jsonp' -d '"true"'
-    curl -X PUT 'http://127.0.0.1:'$2'/_config/admins/nation' -d '"oleoleole"'
+    curl -X PUT 'http://127.0.0.1:5984/_config/httpd/allow_jsonp' -d '"true"'
+    curl -X PUT 'http://127.0.0.1:5984/_config/admins/nation' -d '"oleoleole"'
 
     # add redirect on port 8080
     cd /root
