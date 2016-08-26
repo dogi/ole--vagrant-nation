@@ -91,7 +91,7 @@ Vagrant.configure(2) do |config|
     cd ole
     git clone https://github.com/open-learning-exchange/BeLL-Apps.git
     cd BeLL-Apps
-    git checkout 0.12.42
+    git checkout badges
     chmod +x node_modules/.bin/couchapp
 
     # create install_linux
